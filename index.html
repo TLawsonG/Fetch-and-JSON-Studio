@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html>
+  <script>
+  window.addEventListener("load", function(){
+    fetch("https://handlers.education.launchcode.org/static/astronauts.json").then(function(response){
+  });
+  </script>
+  
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -10,7 +16,18 @@
     <script src="script.js"></script>
     <h1>Astronauts</h1>
     <div id="container">
-        <!-- List of astronauts will be added here dynamically -->
+      <div class="astronaut">
+   <div class="bio">
+      <h3>Mae Jemison</h3>
+      <ul>
+         <li>Hours in space: 190</li>
+         <li>Active: ${json.active}</li>
+         <li>Skills: ${json.skills}</li>
+      </ul>
+   </div>
+   <img class="avatar" src="images/mae-jemison.jpg">
+</div>
+26.6.2.3. 
     </div>
   </body>
 </html>
